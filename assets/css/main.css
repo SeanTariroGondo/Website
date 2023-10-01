@@ -3240,8 +3240,10 @@ input, select, textarea {
 		100% { transform: rotate( 0.0deg) }
 	  }
 	  
-	  
-
+	  h1 {
+		text-align: center;
+		margin: 35px 0 20px 0 !important;
+	  }
   
   
 	  
