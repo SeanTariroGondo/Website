@@ -26,7 +26,7 @@ div.popup {
 	display 	: none;
 	background	: white; /* choose your color; */
 	width		: 900px; /* width */
-	height		: 500px; /* height */
+	height		: 550px; /* height */
 	position	: fixed;
 	top		: 50%;
 	left		: 50%;
