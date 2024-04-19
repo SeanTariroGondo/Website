@@ -14,9 +14,43 @@
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'G-J0BXNBQE2P');
+
+// Define an array of texts
+var textArray = [
+					"Why do programmers prefer dark mode? Because light attracts bugs!",
+					"An SQL query goes into a bar, walks up to two tables, and asks, 'Can I join you?'",
+					"Why don't programmers like nature? It has too many bugs.",
+					"Debugging: Being the detective in a crime movie where you're also the murderer.",
+					"99 little bugs in the code, 99 bugs in the code, take one down, patch it around, 127 little bugs in the code.",
+					"What did the database say to the query? 'You complete me.'",
+					"Why was the JavaScript reality show canceled? People thought it was scripted.",
+					"Software developers like to solve problems. If there are no problems handily available, they will create their own problems.",
+					"Why do programmers always mix up Christmas and Halloween? Because Oct 31 equals Dec 25.",
+					"['hip', 'hip'] (hip hip array!)",
+					"How many programmers does it take to change a light bulb? None. It’s a hardware problem.",
+					"Why do Java developers wear glasses? Because they can’t C#",
+					"Why did the developer go broke? Because he used up all his cache",
+					"Why did the geek add body { padding-top: 1000px; } to his Facebook profile? He wanted to keep a low profile.",
+					"8 bytes walk into a bar, the bartenders asks “What will it be?” One of them says, “Make us a double.",
+					"Two bytes meet. The first byte asks, “Are you ill?” The second byte replies, “No, just feeling a bit off.",
+					"There’s a band called 1023MB. They haven’t had any gigs yet.",
+					"There are only two hard things in computer science: cache invalidation, naming things, and off-by-one errors.",
+					"Whoever said that the definition of insanity is doing the same thing over and over again and expecting different results has obviously never had to reboot a computer."
+    			];
+
+   // Function to update the text
+   function updateText() {
+      var textIndex = Math.floor(Math.random() * textArray.length); // Select a random index from the array
+      document.getElementById("changingText").textContent = textArray[textIndex];
+    }
+
+    // Update the text when the page loads
+    window.onload = function() {
+      updateText();
+      // Update the text every hour
+      setInterval(updateText, 30000); // milliseconds 
+	};
 	</script>
-
-
 
 	<title>@Seang™</title>
 	<meta charset="utf-16" />
@@ -31,7 +65,7 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="inner">
-			<a href="" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+			<a href="" class="image avatar"><img src="images/avatar.jpg" alt=""/></a>
 			<h1><strong><span class="wave">👋</span>Hi there, I am Sean Tariro Gondo.</strong><br />
 				<br />
 				<blockquote>
@@ -40,6 +74,8 @@
 					utilization of data.
 				</blockquote>
 		</div>
+		<P>Good old humour.</P>
+		<marquee  style = color:hsl(0,18%,55%) width="40%" direction="UP" height="50px" scrollamount="1" id="changingText">Loading....</marquee>
 	</header>
 
 	<!-- Main -->
